@@ -1,8 +1,6 @@
 package api
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func HandleRequest() {
 	fmt.Println("Handling API request")
