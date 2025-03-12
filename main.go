@@ -1,12 +1,13 @@
 package main
 
 import (
-	"api"
-	"database"
+	"go-web-scraper/api"
+	"go-web-scraper/database"
+	"go-web-scraper/scraper"
 )
 
 func main() {
 	api.HandleRequest()
 	database.ConnectDB()
+	scraper.StartScraper()
 }
-
